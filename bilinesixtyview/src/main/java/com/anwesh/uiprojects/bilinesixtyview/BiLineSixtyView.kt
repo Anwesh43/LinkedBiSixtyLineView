@@ -18,7 +18,7 @@ val scGap : Float = 0.05f
 val scDiv : Double = 0.51
 val sizeFactor : Float = 2.9f
 val strokeFactor : Int = 90
-val foreColor : Int = Color.parseColor("#34CF93")
+val foreColor : Int = Color.parseColor("#00C853")
 val backColor : Int = Color.parseColor("#BDBDBD")
 
 fun Int.inverse() : Float = 1f / this
@@ -142,7 +142,7 @@ class BiLineSixtyView(ctx : Context) : View(ctx) {
 
         fun draw(canvas : Canvas, paint : Paint) {
             canvas.drawBLSNode(i, state.scale, paint)
-            prev?.draw(canvas, paint)
+            next?.draw(canvas, paint)
         }
 
         fun update(cb : (Int, Float) -> Unit) {
