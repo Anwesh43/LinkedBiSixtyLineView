@@ -189,4 +189,26 @@ class BiLineSixtyView(ctx : Context) : View(ctx) {
             curr.startUpdating(cb)
         }
     }
+
+    data class Renderer(var view : BiLineSixtyView) {
+
+        private val animator : Animator = Animator(view)
+        private val bls : BiLineSixty = BiLineSixty(0)
+
+        fun render(canvas : Canvas, paint : Paint) {
+            canvas.drawColor(backColor)
+            bls.draw(canvas, paint)
+            animator.animate {
+                bls.update {i, scl ->
+                    animator.stop()
+                }
+            }
+        }
+
+        fun handleTap() {
+            bls.startUpdating {
+                animator.start()
+            }
+        }
+    }
 }
