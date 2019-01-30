@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LinkedBiLineSixtyView.iml" filepath="$PROJECT_DIR$/LinkedBiLineSixtyView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bilinesixtyview/bilinesixtyview.iml" filepath="$PROJECT_DIR$/bilinesixtyview/bilinesixtyview.iml" />
+    </modules>
+  </component>
+</project>
