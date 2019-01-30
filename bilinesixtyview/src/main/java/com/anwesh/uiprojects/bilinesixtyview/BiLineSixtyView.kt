@@ -212,4 +212,13 @@ class BiLineSixtyView(ctx : Context) : View(ctx) {
             }
         }
     }
+
+    companion object {
+
+        fun create(activity : Activity) : BiLineSixtyView {
+            val view : BiLineSixtyView = BiLineSixtyView(activity)
+            activity.setContentView(view)
+            return view
+        }
+    }
 }
